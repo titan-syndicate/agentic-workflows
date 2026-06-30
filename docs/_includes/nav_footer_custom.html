@@ -1,8 +1,13 @@
 <!--
-  Swappable light/dark theme toggle for the site nav footer.
-  Just-the-Docs ships built-in `light` and `dark` color schemes and exposes a global
-  `jtd` object with getTheme()/setTheme(). We add a button here and persist the choice in
-  localStorage so it sticks across pages and visits.
+  Theme handling for the site nav footer.
+
+  Default behavior: follow the visitor's OS-level color-scheme preference
+  (`prefers-color-scheme`) and live-update if they change it. The button is a manual
+  OVERRIDE that sticks (saved in localStorage); until they click it, the site just
+  mirrors their system setting.
+
+  Just-the-Docs ships built-in `light`/`dark` schemes and a global `jtd` with
+  getTheme()/setTheme(); GitHub Pages serves this as static JS, no server needed.
 -->
 <button
   type="button"
@@ -14,29 +19,42 @@
 
 <script>
   (function () {
-    var STORAGE_KEY = "jtd-theme";
+    var KEY = "jtd-theme-override";
+    var mq = window.matchMedia("(prefers-color-scheme: dark)");
 
+    function systemTheme() { return mq.matches ? "dark" : "light"; }
+    function override() {
+      var o = localStorage.getItem(KEY);
+      return (o === "dark" || o === "light") ? o : null;
+    }
     function label(btn) {
       btn.textContent = (jtd.getTheme() === "dark") ? "☀️ Light mode" : "🌙 Dark mode";
     }
 
-    // Run after the theme's own script has defined `jtd` and loaded the default scheme.
+    // Run after the theme's script has defined `jtd` and loaded the default scheme.
     window.addEventListener("load", function () {
+      if (typeof jtd === "undefined") return;
+
+      // Manual override wins; otherwise mirror the OS preference.
+      jtd.setTheme(override() || systemTheme());
+
       var btn = document.querySelector(".js-toggle-theme");
-      if (typeof jtd === "undefined" || !btn) return;
-
-      // Apply any previously saved preference.
-      var saved = localStorage.getItem(STORAGE_KEY);
-      if (saved === "dark" || saved === "light") {
-        jtd.setTheme(saved);
-      }
-      label(btn);
-
-      btn.addEventListener("click", function () {
-        var next = (jtd.getTheme() === "dark") ? "light" : "dark";
-        jtd.setTheme(next);
-        localStorage.setItem(STORAGE_KEY, next);
+      if (btn) {
         label(btn);
+        btn.addEventListener("click", function () {
+          var next = (jtd.getTheme() === "dark") ? "light" : "dark";
+          jtd.setTheme(next);
+          localStorage.setItem(KEY, next); // becomes a sticky override
+          label(btn);
+        });
+      }
+
+      // Live-follow OS changes, but only while there's no manual override.
+      mq.addEventListener("change", function () {
+        if (!override()) {
+          jtd.setTheme(systemTheme());
+          if (btn) label(btn);
+        }
       });
     });
   })();
