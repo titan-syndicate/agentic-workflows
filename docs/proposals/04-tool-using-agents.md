@@ -1,3 +1,9 @@
+---
+title: "04 · Tool-using agents"
+parent: Proposals
+nav_order: 4
+---
+
 # Proposal 04 — Scenario C: Tool-Using Agents
 
 **Status:** DRAFT · Parent: [00 Overview](00-overview.md) · Pattern: *agent-drives-the-tools*

@@ -1,3 +1,9 @@
+---
+title: "01 · Repo & site structure"
+parent: Proposals
+nav_order: 1
+---
+
 # Proposal 01 — Repo & Site Structure
 
 **Status:** DRAFT · Parent: [00 Overview](00-overview.md)

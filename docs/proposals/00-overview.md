@@ -1,3 +1,9 @@
+---
+title: "00 · Overview"
+parent: Proposals
+nav_order: 0
+---
+
 # Proposal 00 — Overview (Top-Level)
 
 **Status:** DRAFT · **Owner:** @rianfowler · **Repo:** `titan-syndicate/agentic-workflows`

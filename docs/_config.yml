@@ -36,8 +36,10 @@ aux_links:
     - "https://github.com/titan-syndicate/agentic-workflows"
 aux_links_new_tab: true
 
-# Edit-this-page links.
-gh_edit_link: true
+# Edit-this-page links. Disabled: the site source lives in /docs, but Just-the-Docs builds
+# the edit path from page.path (relative to /docs), producing a wrong /proposals/... link
+# instead of /docs/proposals/.... Re-enable if the site moves to the repo root.
+gh_edit_link: false
 gh_edit_link_text: "Edit this page on GitHub"
 gh_edit_repository: "https://github.com/titan-syndicate/agentic-workflows"
 gh_edit_branch: "main"

@@ -1,3 +1,9 @@
+---
+title: "06 · Secrets & billing"
+parent: Proposals
+nav_order: 6
+---
+
 # Proposal 06 — Secrets, Tokens & Billing
 
 **Status:** DRAFT · Parent: [00 Overview](00-overview.md)

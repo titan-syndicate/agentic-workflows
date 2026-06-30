@@ -1,3 +1,9 @@
+---
+title: "07 · Conventions"
+parent: Proposals
+nav_order: 7
+---
+
 # Proposal 07 — Engineering Conventions
 
 **Status:** DRAFT · Parent: [00 Overview](00-overview.md)

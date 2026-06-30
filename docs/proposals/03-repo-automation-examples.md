@@ -1,3 +1,9 @@
+---
+title: "03 · Repo automation"
+parent: Proposals
+nav_order: 3
+---
+
 # Proposal 03 — Scenario B: Repository Automation Examples
 
 **Status:** DRAFT · Parent: [00 Overview](00-overview.md)
