@@ -14,11 +14,15 @@ docs_dir: docs
 not_in_nav: |
   proposals/README.md
 
+extra_css:
+  - stylesheets/extra.css
+
 theme:
   name: material
   icon:
     repo: fontawesome/brands/github
   # Light/dark that follows the OS by default (prefers-color-scheme) with a manual toggle.
+  # Colors are driven by docs/stylesheets/extra.css (primary/accent set to "custom").
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -26,15 +30,15 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to system preference

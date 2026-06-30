@@ -1,0 +1,36 @@
+/* ---------------------------------------------------------------------------
+   Brand palette — Dick's Sporting Goods–inspired green.
+   Overrides Material's color tokens for both the light ("default") and dark
+   ("slate") schemes. Palette entries in mkdocs.yml use `primary: custom` /
+   `accent: custom` so these CSS variables drive the colors.
+   --------------------------------------------------------------------------- */
+
+/* Light mode */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #00843d; /* kelly green header */
+  --md-primary-fg-color--light: #2faa63;
+  --md-primary-fg-color--dark:  #006b31;
+  --md-primary-bg-color:        #ffffff; /* text on the header */
+  --md-accent-fg-color:         #00662f;
+  --md-typeset-a-color:         #00733e; /* links */
+}
+
+/* Dark mode — deep forest header, green-tinted surface, bright green links */
+[data-md-color-scheme="slate"] {
+  --md-hue: 150;                          /* shift slate grays toward green */
+
+  --md-primary-fg-color:        #0c5c2c;  /* deep forest header */
+  --md-primary-fg-color--light: #1f8f49;
+  --md-primary-fg-color--dark:  #06401f;
+  --md-primary-bg-color:        #eafff1;  /* text on the header */
+
+  --md-accent-fg-color:         #35c45f;  /* hover/active accent */
+  --md-typeset-a-color:         #46c96a;  /* links (high contrast on dark) */
+}
+
+/* Make the "primary" buttons on the landing page use the brand green too. */
+.md-button--primary {
+  background-color: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
