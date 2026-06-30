@@ -1,0 +1,70 @@
+# GitHub Pages / Jekyll configuration for the Agentic Workflows tutorial site.
+# Built natively by GitHub Pages (no custom build Action) using the Just-the-Docs
+# remote theme, which gives left-nav, search, and ordered/nested pages.
+
+title: Agentic Workflows
+description: >-
+  Adoption and enablement guide for GitHub Agentic Workflows (gh aw) — what they
+  are, when to use them, and how to build them.
+
+# Project site URL. baseurl must match the repo name for links/assets to resolve.
+url: https://titan-syndicate.github.io
+baseurl: /agentic-workflows
+
+remote_theme: just-the-docs/just-the-docs
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+# --- Just-the-Docs options -------------------------------------------------
+search_enabled: true
+search:
+  heading_level: 3
+  previews: 3
+
+# Light by default; readers can toggle dark.
+color_scheme: light
+
+# Show a "table of contents" of child pages on section landing pages.
+nav_sort: case_insensitive
+
+aux_links:
+  "Proposals":
+    - "https://github.com/titan-syndicate/agentic-workflows/tree/main/docs/proposals"
+  "View on GitHub":
+    - "https://github.com/titan-syndicate/agentic-workflows"
+aux_links_new_tab: true
+
+# Edit-this-page links.
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/titan-syndicate/agentic-workflows"
+gh_edit_branch: "main"
+gh_edit_view_mode: "tree"
+
+# Audience badges, rendered as Just-the-Docs callouts. Use in any page like:
+#   {: .intro }
+#   > This section is written for engineers who already use Actions for CI.
+callouts:
+  intro:
+    title: "Intro tier · for engineers who use Actions for CI"
+    color: green
+  expert:
+    title: "Expert tier · for Actions power users & runner admins"
+    color: purple
+  tryit:
+    title: "Try it yourself"
+    color: blue
+  note:
+    title: Note
+    color: yellow
+  warning:
+    title: Warning
+    color: red
+
+# Footer
+last_edit_timestamp: true
+footer_content: >-
+  Enablement material for GitHub Agentic Workflows · titan-syndicate/agentic-workflows ·
+  MIT licensed.

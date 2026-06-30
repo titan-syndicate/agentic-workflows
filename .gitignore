@@ -1,0 +1,30 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Env / secrets (never commit real secrets — use repo secrets)
+.env
+.env.*
+!.env.example
+
+# Jekyll / GitHub Pages local build
+docs/_site/
+docs/.jekyll-cache/
+docs/.jekyll-metadata
+docs/vendor/
+.bundle/
+
+# Claude Code local (personal) settings
+.claude/settings.local.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# gh aw local artifacts
+*.log

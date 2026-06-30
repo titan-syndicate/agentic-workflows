@@ -1,0 +1,11 @@
+# For LOCAL preview only (`bundle install && bundle exec jekyll serve`).
+# GitHub Pages builds the site natively from the github-pages gem set, so this
+# file is not used by the published build.
+
+source "https://rubygems.org"
+
+gem "github-pages", group: :jekyll_plugins
+gem "just-the-docs"
+
+# Windows / JRuby compatibility shims (harmless elsewhere)
+gem "webrick", "~> 1.8"
