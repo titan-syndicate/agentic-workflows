@@ -1,16 +1,7 @@
----
-title: Install gh aw
-layout: default
-parent: Getting started
-nav_order: 1
-audience: intro
----
-
 # Install the `gh aw` extension
-{: .no_toc }
 
-{: .intro }
-> Goal: get the `gh aw` CLI working locally so you can compile and run workflows.
+!!! info "Intro tier"
+    Goal: get the `gh aw` CLI working locally so you can compile and run workflows.
 
 ## What this page will cover
 
@@ -31,4 +22,4 @@ audience: intro
 
 - Where things land: workflows in `.github/workflows/*.md`, compiled `.lock.yml` siblings.
 
-➡️ Next: [Provision a token](provision-token).
+➡️ Next: [Provision a token](provision-token.md).

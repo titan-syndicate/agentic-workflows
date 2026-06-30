@@ -1,17 +1,8 @@
----
-title: Tool-using agents
-layout: default
-parent: Tutorials
-nav_order: 3
-audience: expert
----
-
 # Tool-using agents
-{: .no_toc }
 
-{: .expert }
-> Beyond one-shot summarization: workflows where the agent calls **tools** in a multi-step
-> loop, including custom MCP servers you provide.
+!!! abstract "Expert tier"
+    Beyond one-shot summarization: workflows where the agent calls **tools** in a multi-step
+    loop, including custom MCP servers you provide.
 
 ## What this walkthrough will cover
 

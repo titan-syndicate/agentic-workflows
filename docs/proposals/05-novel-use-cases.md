@@ -1,9 +1,3 @@
----
-title: "05 · Novel use cases"
-parent: Proposals
-nav_order: 5
----
-
 # Proposal 05 — Novel & Idiomatic Use Cases
 
 **Status:** DRAFT · Parent: [00 Overview](00-overview.md)

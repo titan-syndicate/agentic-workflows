@@ -1,18 +1,9 @@
----
-title: Provision a token
-layout: default
-parent: Getting started
-nav_order: 2
-audience: intro
----
-
 # Provision a token & set the secret
-{: .no_toc }
 
-{: .intro }
-> Agentic workflows need credentials for two things: the **GitHub API** (to read the repo
-> and apply safe outputs) and the **AI engine** (to do the reasoning). This page covers
-> both for the **Copilot engine**, which is our default.
+!!! info "Intro tier"
+    Agentic workflows need credentials for two things: the **GitHub API** (to read the repo
+    and apply safe outputs) and the **AI engine** (to do the reasoning). This page covers
+    both for the **Copilot engine**, which is our default.
 
 ## What this page will cover
 
@@ -38,8 +29,8 @@ gh aw secrets set COPILOT_GITHUB_TOKEN
 gh secret set COPILOT_GITHUB_TOKEN
 ```
 
-{: .warning }
-> Never put secrets in workflow-level `env:` — those values are exposed to the model. Use
-> the secret mechanisms above.
+!!! warning
+    Never put secrets in workflow-level `env:` — those values are exposed to the model. Use
+    the secret mechanisms above.
 
-➡️ Next: [Your first run](first-run).
+➡️ Next: [Your first run](first-run.md).

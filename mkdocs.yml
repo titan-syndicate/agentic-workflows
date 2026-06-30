@@ -1,0 +1,105 @@
+site_name: Agentic Workflows
+site_description: >-
+  Adoption and enablement guide for GitHub Agentic Workflows (gh aw) — what they are,
+  when to use them, and how to build them.
+site_url: https://titan-syndicate.github.io/agentic-workflows/
+
+repo_url: https://github.com/titan-syndicate/agentic-workflows
+repo_name: titan-syndicate/agentic-workflows
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+
+# README is kept for GitHub folder browsing, not as a site page.
+not_in_nav: |
+  proposals/README.md
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  # Light/dark that follows the OS by default (prefers-color-scheme) with a manual toggle.
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  features:
+    - navigation.indexes      # section landing pages
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - getting-started.md
+      - Install gh aw: getting-started/install.md
+      - Provision a token: getting-started/provision-token.md
+      - Your first run: getting-started/first-run.md
+  - Concepts:
+      - concepts.md
+      - Anatomy of a workflow: concepts/anatomy.md
+      - Triggers: concepts/triggers.md
+      - Permissions & safe outputs: concepts/permissions-and-safe-outputs.md
+      - Tools & MCP: concepts/tools-and-mcp.md
+      - Engines: concepts/engines.md
+      - Security model: concepts/security-model.md
+  - Tutorials:
+      - tutorials.md
+      - Committer insights: tutorials/committer-insights.md
+      - Repository automation: tutorials/repo-automation.md
+      - Tool-using agents: tutorials/tool-using-agents.md
+  - Reference:
+      - reference.md
+      - Frontmatter schema: reference/frontmatter-schema.md
+      - Runners & the firewall: reference/runners-and-firewall.md
+      - Billing & cost: reference/billing.md
+      - Self-hosted runners: reference/self-hosted.md
+  - Proposals:
+      - proposals.md
+      - 00 · Overview: proposals/00-overview.md
+      - 01 · Repo & site structure: proposals/01-repo-and-site-structure.md
+      - 02 · Committer insights: proposals/02-committer-insights.md
+      - 03 · Repo automation: proposals/03-repo-automation-examples.md
+      - 04 · Tool-using agents: proposals/04-tool-using-agents.md
+      - 05 · Novel use cases: proposals/05-novel-use-cases.md
+      - 06 · Secrets & billing: proposals/06-secrets-and-billing.md
+      - 07 · Conventions: proposals/07-conventions.md

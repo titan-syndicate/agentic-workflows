@@ -1,17 +1,8 @@
----
-title: Runners & the firewall
-layout: default
-parent: Reference
-nav_order: 2
-audience: expert
----
-
 # Runners & the Agent Workflow Firewall
-{: .no_toc }
 
-{: .expert }
-> For the people who run the runners. How agentic workflows execute and how their network
-> access is contained.
+!!! abstract "Expert tier"
+    For the people who run the runners. How agentic workflows execute and how their network
+    access is contained.
 
 ## What this page will cover
 

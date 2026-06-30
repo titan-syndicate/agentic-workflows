@@ -1,18 +1,9 @@
----
-title: Frontmatter schema
-layout: default
-parent: Reference
-nav_order: 1
-audience: expert
----
-
 # Frontmatter schema
-{: .no_toc }
 
-{: .expert }
-> The exhaustive key-by-key reference. This page will mirror the official
-> [frontmatter reference](https://github.github.com/gh-aw/reference/frontmatter/) with our
-> own annotations and examples.
+!!! abstract "Expert tier"
+    The exhaustive key-by-key reference. This page will mirror the official
+    [frontmatter reference](https://github.github.com/gh-aw/reference/frontmatter/) with our
+    own annotations and examples.
 
 ## What this page will cover
 

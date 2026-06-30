@@ -1,16 +1,7 @@
----
-title: Your first run
-layout: default
-parent: Getting started
-nav_order: 3
-audience: intro
----
-
 # Your first run
-{: .no_toc }
 
-{: .tryit }
-> Author a tiny workflow, compile it, commit, and watch it run.
+!!! example "Try it yourself"
+    Author a tiny workflow, compile it, commit, and watch it run.
 
 ## What this page will cover
 
@@ -23,6 +14,6 @@ audience: intro
 5. **Read the output**: where the agent's comment/issue shows up, and how the
    threat-detection + safe-output jobs gate the write.
 
-{: .note }
-> `gh aw trial <workflow> --dry-run` lets you test in a throwaway/private repo before
-> committing to a real one.
+!!! note
+    `gh aw trial <workflow> --dry-run` lets you test in a throwaway/private repo before
+    committing to a real one.

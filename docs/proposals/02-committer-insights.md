@@ -1,9 +1,3 @@
----
-title: "02 · Committer insights"
-parent: Proposals
-nav_order: 2
----
-
 # Proposal 02 — Scenario A: Committer Insights
 
 **Status:** DRAFT · Parent: [00 Overview](00-overview.md) · Pattern: *gather-then-summarize*

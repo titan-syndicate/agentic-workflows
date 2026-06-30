@@ -1,16 +1,7 @@
----
-title: Security model
-layout: default
-parent: Concepts
-nav_order: 6
-audience: expert
----
-
 # Security model
-{: .no_toc }
 
-{: .expert }
-> Defense-in-depth: the agent is sandboxed, network-restricted, and every write is gated.
+!!! abstract "Expert tier"
+    Defense-in-depth: the agent is sandboxed, network-restricted, and every write is gated.
 
 ## What this page will cover
 
@@ -22,7 +13,7 @@ audience: expert
 - **Sandboxing** — agent and MCP servers run in isolated Docker containers; secret
   redaction scans artifacts before upload.
 - **Agent Workflow Firewall (AWF)** — default-deny network egress with domain/ecosystem
-  allowlists (see [runners & firewall](../reference/runners-and-firewall)).
+  allowlists (see [runners & firewall](../reference/runners-and-firewall.md)).
 - **Threat-detection job** — scans output and patches for prompt injection, secret leaks,
   and malicious diffs; blocks safe outputs on failure. Has its own AIC budget.
 - **Protected files** — manifests, `.github/workflows/`, and agent files default to

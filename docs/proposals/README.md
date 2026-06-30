@@ -1,9 +1,3 @@
----
-title: Proposals (folder index)
-nav_exclude: true
-search_exclude: true
----
-
 # Proposals
 
 This folder holds the proposal set for the `agentic-workflows` enablement repo. It starts

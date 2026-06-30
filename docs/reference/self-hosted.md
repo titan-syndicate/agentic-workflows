@@ -1,17 +1,8 @@
----
-title: Self-hosted runners
-layout: default
-parent: Reference
-nav_order: 4
-audience: expert
----
-
 # Self-hosted runners
-{: .no_toc }
 
-{: .expert }
-> Considerations for running agentic workflows on your own infrastructure rather than
-> GitHub-hosted runners.
+!!! abstract "Expert tier"
+    Considerations for running agentic workflows on your own infrastructure rather than
+    GitHub-hosted runners.
 
 ## What this page will cover
 
@@ -24,6 +15,6 @@ audience: expert
 - When self-hosting is worth it (data residency, custom toolchains) vs. the simplicity of
   GitHub-hosted runners.
 
-{: .note }
-> Lower priority for the initial examples (we target GitHub-hosted runners first), but
-> captured here because runner admins will ask.
+!!! note
+    Lower priority for the initial examples (we target GitHub-hosted runners first), but
+    captured here because runner admins will ask.

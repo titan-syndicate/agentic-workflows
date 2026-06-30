@@ -1,9 +1,3 @@
----
-title: "06 · Secrets & billing"
-parent: Proposals
-nav_order: 6
----
-
 # Proposal 06 — Secrets, Tokens & Billing
 
 **Status:** DRAFT · Parent: [00 Overview](00-overview.md)
@@ -44,9 +38,9 @@ secrets are pulled from **repository secrets**.
 gh aw secrets set COPILOT_GITHUB_TOKEN          # or: gh secret set COPILOT_GITHUB_TOKEN
 ```
 
-{: .warning }
-Never place secrets in workflow-level `env:` — those values are exposed to the model. Use
-the secret mechanisms above; the threat-detection job also scans for accidental leaks.
+!!! warning
+    Never place secrets in workflow-level `env:` — those values are exposed to the model. Use
+    the secret mechanisms above; the threat-detection job also scans for accidental leaks.
 
 ### Other engines (for reference)
 `ANTHROPIC_API_KEY` (Claude), `OPENAI_API_KEY` (Codex), `GEMINI_API_KEY` (Gemini). Not used
@@ -72,10 +66,10 @@ A run has **two cost components**:
 must be enabled by an admin, and AIC consumption rolls up to the org. We surface this so
 adopters know the knob exists; **optimizing** org spend is out of scope for now.
 
-{: .note }
-**Verification caveat:** older write-ups mention "~2 premium requests per run." The current
-`gh aw` docs express cost in **AIC**, and we could not verify the premium-request figure. The
-site will cite **AIC** and add a premium-request mapping only if GitHub republishes one.
+!!! note
+    **Verification caveat:** older write-ups mention "~2 premium requests per run." The current
+    `gh aw` docs express cost in **AIC**, and we could not verify the premium-request figure. The
+    site will cite **AIC** and add a premium-request mapping only if GitHub republishes one.
 
 ## What the site must contain (deliverables)
 

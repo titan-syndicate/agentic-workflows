@@ -1,17 +1,8 @@
----
-title: Billing & cost
-layout: default
-parent: Reference
-nav_order: 3
-audience: expert
----
-
 # Billing & cost
-{: .no_toc }
 
-{: .expert }
-> What a run actually costs, the built-in caps, and how to inspect spend. (Cost
-> *management* is a future focus for this repo — this page is the primer.)
+!!! abstract "Expert tier"
+    What a run actually costs, the built-in caps, and how to inspect spend. (Cost
+    *management* is a future focus for this repo — this page is the primer.)
 
 ## What this page will cover
 
@@ -29,7 +20,7 @@ audience: expert
 - **Org billing for Copilot** — admin must enable Copilot CLI org billing; the AIC model
   supersedes the older "premium requests" framing.
 
-{: .note }
-> The often-quoted "~2 premium requests per run" figure could not be verified against the
-> current docs, which express cost in AIC. We'll cite AIC and update if GitHub republishes
-> a premium-request mapping.
+!!! note
+    The often-quoted "~2 premium requests per run" figure could not be verified against the
+    current docs, which express cost in AIC. We'll cite AIC and update if GitHub republishes
+    a premium-request mapping.

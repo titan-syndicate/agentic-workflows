@@ -1,17 +1,8 @@
----
-title: Triggers
-layout: default
-parent: Concepts
-nav_order: 2
-audience: intro
----
-
 # Triggers (`on:`)
-{: .no_toc }
 
-{: .intro }
-> When does the agent wake up? Same `on:` model as Actions, plus a few agent-specific
-> forms.
+!!! info "Intro tier"
+    When does the agent wake up? Same `on:` model as Actions, plus a few agent-specific
+    forms.
 
 ## What this page will cover
 
@@ -28,4 +19,4 @@ audience: intro
   `reaction:`, `stop-after:` deadlines, and `skip-if-match` / `skip-if-no-match` to avoid
   redundant runs.
 
-See the [frontmatter schema](../reference/frontmatter-schema) for the exhaustive list.
+See the [frontmatter schema](../reference/frontmatter-schema.md) for the exhaustive list.

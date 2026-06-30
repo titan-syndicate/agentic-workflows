@@ -1,17 +1,8 @@
----
-title: Committer insights
-layout: default
-parent: Tutorials
-nav_order: 1
-audience: intro
----
-
 # Committer insights
-{: .no_toc }
 
-{: .tryit }
-> Gather contributor activity with plain Node scripts, then let the agent turn the raw
-> data into a readable narrative.
+!!! example "Try it yourself"
+    Gather contributor activity with plain Node scripts, then let the agent turn the raw
+    data into a readable narrative.
 
 ## What this walkthrough will cover
 

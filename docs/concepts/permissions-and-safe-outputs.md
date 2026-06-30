@@ -1,17 +1,8 @@
----
-title: Permissions & safe outputs
-layout: default
-parent: Concepts
-nav_order: 3
-audience: intro
----
-
 # Permissions & safe outputs
-{: .no_toc }
 
-{: .intro }
-> This is the heart of the security model and the part most worth understanding before you
-> build anything.
+!!! info "Intro tier"
+    This is the heart of the security model and the part most worth understanding before you
+    build anything.
 
 ## What this page will cover
 
@@ -38,4 +29,4 @@ safe-outputs:
     max: 1
 ```
 
-See the full catalog in the [reference](../reference/frontmatter-schema).
+See the full catalog in the [reference](../reference/frontmatter-schema.md).

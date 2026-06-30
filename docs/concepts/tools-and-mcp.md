@@ -1,17 +1,8 @@
----
-title: Tools & MCP
-layout: default
-parent: Concepts
-nav_order: 4
-audience: expert
----
-
 # Tools & MCP
-{: .no_toc }
 
-{: .expert }
-> What the agent can *do* during a run — read the repo, run shell, fetch the web, or call
-> your own services over MCP.
+!!! abstract "Expert tier"
+    What the agent can *do* during a run — read the repo, run shell, fetch the web, or call
+    your own services over MCP.
 
 ## What this page will cover
 
@@ -39,4 +30,4 @@ audience: expert
 - **Isolation** — MCP servers run in isolated Docker containers; egress is mediated by the
   firewall's MCP gateway. Helpers: `gh aw mcp list|inspect|add`.
 
-This is the concept behind the [tool-using agents tutorial](../tutorials/tool-using-agents).
+This is the concept behind the [tool-using agents tutorial](../tutorials/tool-using-agents.md).

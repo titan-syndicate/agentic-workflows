@@ -9,12 +9,9 @@ yarn-error.log*
 .env.*
 !.env.example
 
-# Jekyll / GitHub Pages local build
-docs/_site/
-docs/.jekyll-cache/
-docs/.jekyll-metadata
-docs/vendor/
-.bundle/
+# MkDocs local build
+site/
+.cache/
 
 # Claude Code local (personal) settings
 .claude/settings.local.json

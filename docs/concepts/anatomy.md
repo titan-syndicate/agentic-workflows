@@ -1,16 +1,7 @@
----
-title: Anatomy of a workflow
-layout: default
-parent: Concepts
-nav_order: 1
-audience: intro
----
-
 # Anatomy of a workflow
-{: .no_toc }
 
-{: .intro }
-> Every agentic workflow is one Markdown file with two halves.
+!!! info "Intro tier"
+    Every agentic workflow is one Markdown file with two halves.
 
 ## What this page will cover
 

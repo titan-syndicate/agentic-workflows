@@ -1,17 +1,8 @@
----
-title: Engines
-layout: default
-parent: Concepts
-nav_order: 5
-audience: expert
----
-
 # Engines
-{: .no_toc }
 
-{: .expert }
-> The `engine:` key selects which coding agent drives the workflow. We default to Copilot;
-> the model is pluggable.
+!!! abstract "Expert tier"
+    The `engine:` key selects which coding agent drives the workflow. We default to Copilot;
+    the model is pluggable.
 
 ## What this page will cover
 
@@ -34,4 +25,4 @@ audience: expert
   `GEMINI_API_KEY`.
 - **Turn / continuation budgets** — `max-turns`, `max-continuations`, per-tool `timeout`.
 - **When to switch** — cost vs. capability tradeoffs; smaller models for high-frequency
-  workflows (see [billing](../reference/billing)).
+  workflows (see [billing](../reference/billing.md)).

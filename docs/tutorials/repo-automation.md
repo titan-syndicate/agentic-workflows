@@ -1,17 +1,8 @@
----
-title: Repository automation
-layout: default
-parent: Tutorials
-nav_order: 2
-audience: intro
----
-
 # Repository automation
-{: .no_toc }
 
-{: .tryit }
-> The bread-and-butter scenarios from GitHub's own examples — triage, reporting, and docs
-> hygiene — each kept small and single-purpose.
+!!! example "Try it yourself"
+    The bread-and-butter scenarios from GitHub's own examples — triage, reporting, and docs
+    hygiene — each kept small and single-purpose.
 
 ## What this walkthrough will cover
 
