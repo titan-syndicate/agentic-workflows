@@ -1,0 +1,43 @@
+<!--
+  Swappable light/dark theme toggle for the site nav footer.
+  Just-the-Docs ships built-in `light` and `dark` color schemes and exposes a global
+  `jtd` object with getTheme()/setTheme(). We add a button here and persist the choice in
+  localStorage so it sticks across pages and visits.
+-->
+<button
+  type="button"
+  class="btn btn-outline js-toggle-theme"
+  aria-label="Toggle light or dark theme"
+  style="margin: 0.6rem; width: calc(100% - 1.2rem);">
+  Toggle theme
+</button>
+
+<script>
+  (function () {
+    var STORAGE_KEY = "jtd-theme";
+
+    function label(btn) {
+      btn.textContent = (jtd.getTheme() === "dark") ? "☀️ Light mode" : "🌙 Dark mode";
+    }
+
+    // Run after the theme's own script has defined `jtd` and loaded the default scheme.
+    window.addEventListener("load", function () {
+      var btn = document.querySelector(".js-toggle-theme");
+      if (typeof jtd === "undefined" || !btn) return;
+
+      // Apply any previously saved preference.
+      var saved = localStorage.getItem(STORAGE_KEY);
+      if (saved === "dark" || saved === "light") {
+        jtd.setTheme(saved);
+      }
+      label(btn);
+
+      btn.addEventListener("click", function () {
+        var next = (jtd.getTheme() === "dark") ? "light" : "dark";
+        jtd.setTheme(next);
+        localStorage.setItem(STORAGE_KEY, next);
+        label(btn);
+      });
+    });
+  })();
+</script>
